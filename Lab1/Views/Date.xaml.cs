@@ -43,11 +43,11 @@ namespace Lab1.Views
         private void Button_Click(object sender, RoutedEventArgs e)
         {
            
-            userAgeCaption.Text = "Your age: " + CalculateUserAge();
-            if (!userAgeCaption.Text.Equals("Your age: "))
+            userAgeCaption.Text =  CalculateUserAge();
+            if (!userAgeCaption.Text.Equals(""))
             {
-                westernZodiacSign.Text = "Your Western zodiac sign: " + CalculateWesternZodiacSign();
-                chineseZodiacSign.Text = "Your Chinese zodiac sign: " + CalculateChineseZodiacSign();
+                westernZodiacSign.Text =  CalculateWesternZodiacSign();
+                chineseZodiacSign.Text =  CalculateChineseZodiacSign();
             }
         }
 

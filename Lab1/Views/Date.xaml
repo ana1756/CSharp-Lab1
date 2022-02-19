@@ -5,15 +5,15 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Lab1.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="Auto" d:DesignWidth="Auto">
+             d:DesignHeight="Auto" d:DesignWidth="500">
     <Grid>
         
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="85"></RowDefinition>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition Height="45"></RowDefinition>
         </Grid.RowDefinitions>
 
 
@@ -21,17 +21,19 @@
             Name="UserInput"
             Grid.Row="0" 
             Grid.Column="0" 
-            Margin="20"
+            Margin="20, 0, 20, 0"
             VerticalAlignment="Center">
 
             <TextBlock
                 Name="UserDate"
                 Text="Your date of birth:"
+                FontFamily="Candara"
                 FontSize="16"/>
 
             <DatePicker
                 Name="datePicker"  
-                FontSize="16"/>
+                FontSize="16"
+                FontFamily="Candara"/>
 
         </StackPanel>
 
@@ -39,59 +41,107 @@
             Name="AgeInfo"
             Grid.Row="1" 
             Grid.Column="0" 
-            Margin="20"
             VerticalAlignment="Center">
 
             <TextBlock
-                Name="userAgeCaption"
+               
                 Text="Your age:"
-                FontSize="16"/>
+                FontSize="16"
+                FontFamily="Candara"
+                Margin="20, 0, 20, 4"  />
 
+            <StackPanel
+                Width="460"
+                Background="AliceBlue"
+                Height="40"
+                 Margin="20, 0, 20, 0">
+
+                <TextBlock
+                 Name="userAgeCaption"
+                HorizontalAlignment="Center"
+                Padding="0, 10, 0, 10"
+                FontSize="16"
+                FontWeight="Bold"
+                FontFamily="Ink Free"/>
+            </StackPanel>
+  
         </StackPanel>
 
+        
         <StackPanel
             Name="WesterZodiacInfo"
-            Orientation="Horizontal"
             Grid.Row="2" 
             Grid.Column="0" 
-            Margin="20"
             VerticalAlignment="Center">
 
-            <TextBlock
-                Name="westernZodiacSign"
+            <TextBlock 
                 Text="Your Western zodiac sign:"
-                FontSize="16"/>
+                FontSize="16"
+                FontFamily="Candara"
+                Margin="20, 0, 20, 4"/>
 
-            
+            <StackPanel
+                Width="460"
+                Background="AliceBlue"
+                Height="40"
+                Margin="20, 0, 20, 0">
 
+                <TextBlock
+                    Name="westernZodiacSign"
+                     HorizontalAlignment="Center"
+                    Padding="0, 10, 0, 10"
+                    FontSize="16"
+                     FontWeight="Bold"
+                    FontFamily="Ink Free"/>
+            </StackPanel>
+                      
         </StackPanel>
+
 
         <StackPanel
             Name="ChineseZodiacInfo"
             Grid.Row="3" 
             Grid.Column="0" 
-            Margin="20"
             VerticalAlignment="Center">
 
-            <TextBlock
-                Name="chineseZodiacSign"
+                <TextBlock
                 Text="Your Chinese zodiac sign:"
-                FontSize="16"/>
+                FontSize="16"
+                FontFamily="Candara"
+                Margin="20, 0, 20, 4"/>
 
+                <StackPanel
+                    Width="460"
+                    Background="AliceBlue"
+                    Height="40"
+                    Margin="20, 0, 20, 0">
+
+                <TextBlock
+                        Name="chineseZodiacSign"
+                        HorizontalAlignment="Center"
+                        Padding="0, 10, 0, 10"
+                    FontSize="16"
+                     FontWeight="Bold"
+                    FontFamily="Ink Free"/>
+            </StackPanel>
         </StackPanel>
+
 
         <StackPanel
             Name="ButtonPanel"
             Grid.Row="4" 
             Grid.Column="0" 
-            Margin="20"
             VerticalAlignment="Center">
 
             <Button
                 Name="Button"
                 Content="Calculate"
-                Click="Button_Click"/>
-
+                Click="Button_Click"
+                Background="White"
+                FontSize="18"
+                FontFamily="Candara"
+                Height="35"
+                Margin="20, 0, 20, 0"/>
         </StackPanel>
 
 
