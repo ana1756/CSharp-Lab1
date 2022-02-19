@@ -16,10 +16,6 @@
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
 
         <StackPanel 
             Name="UserInput"
@@ -47,7 +43,7 @@
             VerticalAlignment="Center">
 
             <TextBlock
-                Name="UserAgeCaption"
+                Name="userAgeCaption"
                 Text="Your age:"
                 FontSize="16"/>
 
@@ -55,18 +51,20 @@
 
         <StackPanel
             Name="WesterZodiacInfo"
+            Orientation="Horizontal"
             Grid.Row="2" 
             Grid.Column="0" 
             Margin="20"
             VerticalAlignment="Center">
 
             <TextBlock
-                Name="WesternZodiacSign"
+                Name="westernZodiacSign"
                 Text="Your Western zodiac sign:"
                 FontSize="16"/>
 
-        </StackPanel>
+            
 
+        </StackPanel>
 
         <StackPanel
             Name="ChineseZodiacInfo"
@@ -76,9 +74,23 @@
             VerticalAlignment="Center">
 
             <TextBlock
-                Name="ChineseZodiacSign"
+                Name="chineseZodiacSign"
                 Text="Your Chinese zodiac sign:"
                 FontSize="16"/>
+
+        </StackPanel>
+
+        <StackPanel
+            Name="ButtonPanel"
+            Grid.Row="4" 
+            Grid.Column="0" 
+            Margin="20"
+            VerticalAlignment="Center">
+
+            <Button
+                Name="Button"
+                Content="Calculate"
+                Click="Button_Click"/>
 
         </StackPanel>
 
