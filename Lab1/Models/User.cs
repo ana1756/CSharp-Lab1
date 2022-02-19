@@ -9,12 +9,37 @@ namespace Lab1.Models
 
     public class User
     {
-        private short _date;
+        private DateTime _date;
 
-        public short Date
+        private string age;
+
+        private string wZodiac;
+
+        private string cZodiac;
+
+        public DateTime Date
         {
             get { return _date; }
             set { _date = value; }
         }
+
+        public String Age
+        {
+            get { return age; }
+            set { age = value; }
+        }
+
+        public string WZodiac
+        {
+            get { return wZodiac; }
+            set { wZodiac = value; }
+        }
+
+        public string CZodiac
+        {
+            get { return cZodiac; }
+            set { cZodiac = value; }
+        }
     }
+     
 }
