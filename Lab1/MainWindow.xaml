@@ -6,6 +6,7 @@
         xmlns:views="clr-namespace:Lab1.Views"
         mc:Ignorable="d"
         Title="MainWindow" 
+        Icon="./Resources/icon.png"
         ResizeMode="NoResize"
         Height="420" 
         Width="500">

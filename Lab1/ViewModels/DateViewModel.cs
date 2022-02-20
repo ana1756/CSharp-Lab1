@@ -6,12 +6,8 @@ namespace Lab1.ViewModels
 {
     public class DateViewModel
     {
-
         private User _user = new User();
 
-       
-
-        
         public DateTime Date
         {
             get { return _user.Date; }
@@ -36,11 +32,6 @@ namespace Lab1.ViewModels
             get { return _user.CZodiac; }
             set { _user.CZodiac = value; }
         }
-
-     
-
-
-
 
         public string CalculateWesternZodiacSign()
         {
@@ -76,11 +67,8 @@ namespace Lab1.ViewModels
                 case 12:
                     return (d <= 22) ? wZodiac[8] : wZodiac[9];
                 default:
-                    throw new ArgumentException();
-
+                    throw new Exception();
             }
-
-
 
         }
 
@@ -104,7 +92,7 @@ namespace Lab1.ViewModels
                 return years+"";
 
             }
-            catch (Exception ex)
+            catch 
             {
                 MessageBox.Show("Your date is incorrect");
             }

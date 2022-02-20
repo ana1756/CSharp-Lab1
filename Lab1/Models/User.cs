@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Lab1.Models
 {
@@ -10,11 +6,8 @@ namespace Lab1.Models
     public class User
     {
         private DateTime _date;
-
         private string age;
-
         private string wZodiac;
-
         private string cZodiac;
 
         public DateTime Date
