@@ -89,6 +89,8 @@ namespace Lab1.ViewModels
                 int years = new DateTime(DateTime.Now.Subtract(date).Ticks).Year - 1;
                 if (years > 135)
                     MessageBox.Show("Your date is incorrect");
+                if (now.Day.Equals(date.Day) && now.Month.Equals(date.Month))
+                    MessageBox.Show("Happy Birthday!");
                 return years+"";
 
             }

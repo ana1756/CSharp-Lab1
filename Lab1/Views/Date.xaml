@@ -5,8 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Lab1.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="Auto" d:DesignWidth="500"
-             Language="ENG">
+             d:DesignHeight="Auto" d:DesignWidth="500">
     <Grid>
         
         <Grid.RowDefinitions>
