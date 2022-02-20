@@ -31,11 +31,14 @@ namespace Lab1.Views
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            userAgeCaption.Text = ""+_dateViewModel.CalculateUserAge();
-            if (!userAgeCaption.Text.Equals(""))
+            if (datePicker.SelectedDate != null)
             {
-                westernZodiacSign.Text = _dateViewModel.CalculateWesternZodiacSign();
-                chineseZodiacSign.Text = _dateViewModel.CalculateChineseZodiacSign();
+                userAgeCaption.Text = "" + _dateViewModel.CalculateUserAge();
+                if (!userAgeCaption.Text.Equals(""))
+                {
+                    westernZodiacSign.Text = _dateViewModel.CalculateWesternZodiacSign();
+                    chineseZodiacSign.Text = _dateViewModel.CalculateChineseZodiacSign();
+                }
             }
         }
 
