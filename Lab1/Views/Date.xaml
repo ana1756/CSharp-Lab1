@@ -62,7 +62,7 @@
                  Name="userAgeCaption"
                 HorizontalAlignment="Center"
                 Padding="0, 10, 0, 10"
-                FontSize="16"
+                FontSize="20"
                 FontWeight="Bold"
                 FontFamily="Ink Free"/>
             </StackPanel>
@@ -92,7 +92,7 @@
                     Name="westernZodiacSign"
                      HorizontalAlignment="Center"
                     Padding="0, 10, 0, 10"
-                    FontSize="16"
+                    FontSize="20"
                      FontWeight="Bold"
                     FontFamily="Ink Free"/>
             </StackPanel>
@@ -122,7 +122,7 @@
                         Name="chineseZodiacSign"
                         HorizontalAlignment="Center"
                         Padding="0, 10, 0, 10"
-                    FontSize="16"
+                    FontSize="20"
                      FontWeight="Bold"
                     FontFamily="Ink Free"/>
             </StackPanel>
